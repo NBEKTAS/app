@@ -1,6 +1,6 @@
 /* General Body and Container Styles */
 body {
-    background-color: #f0f0f0;
+    background-color: white;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -14,28 +14,34 @@ body {
     max-width: 500px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* Header and Logo */
-.logo {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 20px;
+/* Header */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
-/* Main content and sections */
-.whole > div {
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #008240; /* Primary green color */
-    color: white;
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Main Content and Buttons */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
 }
 
 a {
@@ -44,52 +50,30 @@ a {
     display: block;
 }
 
-/* Individual section styles - only overrides for unique elements if needed */
-.al {
+.button-item {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-dark {
+    background-color: #378e47; /* Darker green */
+}
+
+.donate-button {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-light {
+    background-color: #6ebf45; /* Lighter green */
+}
+
+.button-text {
+    color: white;
     font-size: 1.2em;
     font-weight: bold;
-}
-
-.pic .imag {
-    width: 50%;
-    height: auto;
-    margin-top: 10px;
-}
-
-.alert {
-    width: 50px;
-    height: auto;
-    vertical-align: middle;
-}
-
-#warning {
-    font-size: 1.5em;
-    font-weight: bold;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-.L1 {
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-}
-
-#mach {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .whole {
-        padding: 15px;
-    }
-    .whole > div {
-        padding: 15px;
-    }
-    #learning, .map, .full, .quest {
-        font-size: 1em;
-    }
 }
