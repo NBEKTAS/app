@@ -9,78 +9,107 @@ body {
     margin: 0;
 }
 
-.container {
+.whole {
     width: 100%;
     max-width: 500px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-}
-
-/* Header */
-.app-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
+/* Header and Logo */
 .logo {
-    height: 40px;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.menu-icon {
-    font-size: 2em;
-    cursor: pointer;
-}
-
-/* Main Content and Buttons */
-.main-content {
+/* Main content and sections */
+.whole > div {
+    border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Adds space between buttons */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
-.button-item {
-    background-color: #388e3c; /* Darker green */
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.donate-button {
-    background-color: #6ebf45; /* Lighter green */
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.button-text {
+/* Individual section styles */
+#learning {
+    background-color: #8ac7d1; /* Light blue color */
     color: white;
     font-size: 1.2em;
     font-weight: bold;
 }
 
-/* Mobile Responsiveness */
+.map {
+    background-color: #388e3c; /* Darker green for map section */
+    color: white;
+}
+
+.al {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pic .imag {
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.full {
+    background-color: #6ebf45; /* Lighter green for alerts */
+    color: white;
+}
+
+.alert {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+#warning {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.L1 {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.quest {
+    background-color: #8ac7d1; /* Light blue */
+    color: white;
+}
+
+#mach {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
-    .app-header {
+    .whole {
         padding: 15px;
     }
-
-    .main-content {
+    .whole > div {
         padding: 15px;
     }
-
-    .button-item, .donate-button {
-        padding: 15px;
+    #learning, .map, .full, .quest {
+        font-size: 1em;
     }
 }
