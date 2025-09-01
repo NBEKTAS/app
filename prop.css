@@ -1,73 +1,86 @@
 /* General Body and Container Styles */
 body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    background-color: white;
-    margin-top: 25px;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.whole {
-    background-color: white;
-    max-width: 520px;
+.container {
     width: 100%;
-    border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-/* Header and Logo */
-.header {
+/* Header */
+.app-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px;
 }
 
 .logo {
-    width: 150px;
+    height: 40px;
 }
 
 .menu-icon {
-    font-size: 30px;
+    font-size: 2em;
     cursor: pointer;
 }
 
-/* Button Styles */
-.main-button {
-    background-color: #378e47; /* A darker green to match the image */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
+/* Main Content and Buttons */
+.main-content {
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between buttons */
 }
 
-.donate-button {
-    background-color: #6ebf45; /* A lighter green to match the donate button */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button-item {
+    background-color: #388e3c; /* Darker green */
+    border-radius: 10px;
     text-align: center;
     padding: 20px;
-    margin-top: 20px; /* Space between the last main button and the donate button */
-    border-radius: 10px;
-    cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.donate-button {
+    background-color: #6ebf45; /* Lighter green */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-text {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 /* Mobile Responsiveness */
-@media only screen and (max-width: 600px) {
-    .whole {
-        max-width: 450px;
+@media (max-width: 600px) {
+    .app-header {
         padding: 15px;
     }
-    .main-button, .donate-button {
-        font-size: 16px;
-        padding: 18px;
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .button-item, .donate-button {
+        padding: 15px;
     }
 }
