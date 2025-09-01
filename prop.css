@@ -12,7 +12,7 @@ body {
 .whole {
     /* Adjusted to be full width on a phone, with padding */
     width: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
     background-color: white;
     box-shadow: none; /* Removed shadow for a cleaner phone-app look */
     padding: 0;
