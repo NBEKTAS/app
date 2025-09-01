@@ -1,350 +1,73 @@
-@media only screen and (min-width: 650px){
-body{
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	background-color: white;
-	margin-top: 25px;
-}
-.logo{
-  position:  static;	
-  width: 350px;
-  left: 0px;
-  top: 0px;
+/* General Body and Container Styles */
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    margin-top: 25px;
 }
 
-.whole{
-   background-color: white;
-   max-width: 520px;
-   border: none;
-   border-radius: 20px;
+.whole {
+    background-color: white;
+    max-width: 520px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
 }
 
-h1{
-	background-color: white;
-	border-radius: 5px 5px 0px 0px;
-	margin: 0%;
-	padding: 3%;
-}
-.map{
-	margin: 17px;
-	margin-right: 2.5%;
-	width: 29%;	
-	float: right;
-	border-radius: 5px;
-	background-color: #8ac7d1;
-	border: 2px solid black;
-	cursor: pointer;
-	padding-right: 11.5%;
-	padding-top: 15px;
-	height: 10%;
-}
-.imag{
-  padding-left: 20px;
-   position: relative;
-   left: 18px;
-   top: 3px;
-   width: 70%;
-   height: 100%;
-   padding-left: 12px;
-} 
-   
-#learning{
-background-color: #8ac7d1; 
-	float: left;
-	position: relative;
-	margin-left: 10px;
-	margin-top: 18px;
-	padding: 49px;
-	padding-bottom: 90px;
-	border-radius: 20px;
-	border: 2px solid black;
-	padding-right: 65px;
-    width: 28%;
-	font-size: 26px;
-}
-.pic{
-		border-radius: 0px 0px 5px 5px;
-	background-color: #6ebf45;
-	float: right;
-	position: relative;
-	margin-right: 0px;
-	margin-top: 5px;
-	padding-bottom: 15px;
-	width: 139.5%;
-	left: 60px;
-	padding-top: 15px;
-}
-.alert{
-   width: 22%;
-   height: auto;
-   padding: 20px;
-   position: absolute;
-   left: 0px;
-   background-color: white;
-   
-}
-.full{
-	background-color:white;
-	margin-top: 50%;
-	text-align:center;
-	margin-left: 2%;
-	margin-right: 2%;
-	border: 2px solid black;
-	border-radius: 5px;
-	position: relative;
-	width: 95%;
-}
-.rob{
-   width: 33%;
-   height: auto;
-   margin-left: 45%;
-   position: relative;
-   bottom: 143px;
-   left: 85px;
-}
-#mach{
-   font-size: 30px;
-   margin: 2%;
-   position: relative;
-   bottom: 10%;
-   padding-left: 3%;
-}
-.quest{
-	background-color: white;
-	width: 87%;
-	height: 98%;
-	margin: 5%;
-    margin-left: 2%;
-	border: 2px solid black;
-	border-radius: 5px;
-	position: relative;
-	padding: 1cm;
+/* Header and Logo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
 }
 
-
-.arrow{
-   position: absolute;
-   width: 98px;
-   border-radius: 0px 0px 5px 0px;
-   background-color: #8ac7d1;
-   border: 2px solid black;
-   cursor: pointer;
-}
-.al{
-   margin-left: 40%;
-   font-size: 25px;
-}
-#warning{
-	font-size: 28px;
-	margin-right: 120px;
-	position: relative;
-	left: 105px;
-	top: 20px;
-}
-::placeholder{
-   color: grey;
-   font-size: 26px;
-}
-#find{
-	width: 79.1%;
-	position: relative;
-	height: 61px;
-	border: 2px solid black;
-	border-radius: 0px 0px 0px 5px;
-	background-color: #8ac7d1;
-   font-size: 26px;	
-}	
-.L1{
-	position: relative;
-	bottom: 15px;
-	left: 55px;
-	width: 360px;
-}
-.D1{
- 	   position: absolute;
-   width: 150px;
-   height: 22px;
-}
+.logo {
+    width: 150px;
 }
 
-a{
-	color: black;
-	
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
 }
 
-
-/*------------------------------------------------------------------------*/
-
-
-@media only screen and (max-width: 600px){
-body{
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	background-color: #6ebf45;
-   margin-top: 25px;	
-}	
-
-.whole{
-	background-color: white;
-   max-width: 450px;
-   border: none;
-   border-radius: 5px;
-}
-h1{
-	background-color: #8ac7d1;
-	border-radius: 5px 5px 0px 0px;
-	margin: 0%;
-	padding: 4%;
-	font-size: 27px;
-}
-.map{
-	float: right;
-	border-radius: 5px;
-	background-color: #8ac7d1;
-	border: 2px solid black;
-	cursor: pointer;
-	padding-right: 11.5%;
-	padding-left: 2.5px;
-	padding-top: 15px;
-	margin: 17px;
-	margin-right: 2%;
-	height: 10%;
-	width: 28.55%;
-}
-.imag{
-   padding-left: 20px;
-   position: relative;
-   left: 18px;
-   top: 3px;
-   width: 70%;
-   height: 100%;
-   padding-left: 12px;
-}
-#learning{
-	background-color: #8ac7d1; 
-	float: left;
-	position: relative;
-	margin-left: 10px;
-	margin-top: 18px;
-	padding: 49px;
-	padding-bottom: 70px;
-	border-radius: 5px;
-	border: 2px solid black;
-	
-    width: 28%;
-	font-size: 26px;
-}
-.pic{
-		border-radius: 0px 0px 5px 5px;
-	background-color: #6ebf45;
-	float: right;
-	position: relative;
-	margin-right: 0px;
-	margin-top: 5px;
-	padding-bottom: 15px;
-	
-	width: 141.5%;
-	left: 51.5px;
-	padding-top: 15px;
-}
-.alert{
-   position: absolute;
-   left: 0px;
-   background-color: white;
-   top: 10px;	
-   width: 22%;
-   height: auto;
-   padding: 20px;
-   
-}
-.full{
-
-	border: 2px solid black;
-	border-radius: 5px;
-	position: relative;
-	
-	background-color:white;
-	margin-top: 55%;
-	text-align:center;
-	margin-left: 2%;
-	margin-right: 2%;
-	width: 95%;
-	height: auto;
-}
-.rob{
-   width: 33%;
-   height: auto;
-   margin-left: 45%;
-   position: relative;
-   bottom: 133px;
-   left: 85px;
-}
-#mach{
-   font-size: 40px;
-   margin: 2%;
-   position: relative;
-   bottom: 10%;
-   padding-left: 3%;
-}
-.quest{
-		background-color: #008240;
-	border: 2px solid black;
-	border-radius: 5px;
-	position: relative;
-
-	width: 87%;
-	height: 100px;
-	margin: 2%;
-    margin-left: 2%;
-	padding: 20px;
+/* Button Styles */
+.main-button {
+    background-color: #378e47; /* A darker green to match the image */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
 
+.donate-button {
+    background-color: #6ebf45; /* A lighter green to match the donate button */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Space between the last main button and the donate button */
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-#find{
-    width: 79.112%;
-	position: relative;
-	height: 61px;
-	border: 2px solid black;
-	border-radius: 0px 0px 0px 5px;
-	background-color: #8ac7d1;
-}
-.arrow{
-	position: absolute;
-	
-   width: 18.5%;
-
-   border: 2px solid black;
-   border-radius: 0px 0px 5px 0px;
-   background-color: #8ac7d1;
-   cursor: pointer;
-   height: 63px;
-}
-.al{
-   font-size: 26px;
-   margin-left: 45%;
-}
-#warning{
-	font-size: 28px;
-	position: relative;
-	top: 20px;
-	
-}
-::placeholder{
-   color: grey;
-   font-size: 26px;
-}
-.L1{
-	position: relative;
-	bottom: 15px;
-	left: 60px;
-	width: 350px;
-}
-.D1{
-	   position: absolute;
-   width: 150px;
-   height: 22px;
-}
-}
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+    .whole {
+        max-width: 450px;
+        padding: 15px;
+    }
+    .main-button, .donate-button {
+        font-size: 16px;
+        padding: 18px;
+    }
 }
