@@ -1,4 +1,11 @@
 /* General Body and Container Styles */
+html, body {
+    /* Set html and body to take up the full viewport height */
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: white;
     font-family: Arial, sans-serif;
