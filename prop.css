@@ -11,7 +11,10 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Correctly centers content vertically and horizontally */
+    align-items: center;
+    /* Make the body a flex container and its child (`.whole`) will grow to fill it */
+    display: flex; 
+    flex-direction: column;
 }
 
 .whole {
