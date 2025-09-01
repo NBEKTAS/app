@@ -5,17 +5,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* Removed min-height to allow content to flow naturally on a phone min-height: 100vh */
     margin: 0;
 }
 
 .whole {
+    /* Adjusted to be full width on a phone, with padding */
     width: 100%;
     max-width: 500px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    box-shadow: none; /* Removed shadow for a cleaner phone-app look */
+    padding: 0;
     box-sizing: border-box;
+    /* Added a top margin to make the whole container look more like a phone screen */
+    margin-top: 50px;
 }
 
 /* Header */
@@ -23,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .logo {
