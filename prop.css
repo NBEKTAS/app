@@ -44,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-top: 20px;
+    padding: 0 20px 20px 20px; /* Added padding to the sides and bottom */
 }
 
 a {
@@ -64,7 +64,7 @@ a {
     background-color: #378e47; /* Darker green */
 }
 
-.donate-button {
+.chatbot-button {
     border-radius: 10px;
     text-align: center;
     padding: 20px;
