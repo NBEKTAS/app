@@ -35,7 +35,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     /* Apply the consistent background color here */
-    background-color: #388e3c; /* Darker green, same as MAP box */
+    background-color: #008240; /* Darker green, same as MAP box */
     color: white; /* Ensure text remains readable */
 }
 
