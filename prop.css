@@ -88,3 +88,17 @@ a {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .whole {
+        /* On small screens, ensure no side padding is left */
+        padding: 0; 
+    }
+    .app-header {
+        padding: 15px;
+    }
+    .main-content {
+        padding: 0 15px 15px 15px;
+    }
+}
