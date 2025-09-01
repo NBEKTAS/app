@@ -11,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center; /* Correctly centers content vertically and horizontally */
+    align-items: stretch; /* Correctly centers content vertically and horizontally */
 }
 
 .whole {
