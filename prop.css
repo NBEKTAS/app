@@ -11,8 +11,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-items: flex-start; /* Aligns content to the top */
+    align-items: center; /* Correctly centers content vertically and horizontally */
 }
 
 .whole {
@@ -25,8 +24,7 @@ body {
     box-shadow: none; /* Removed shadow for a cleaner phone-app look */
     padding: 0;
     box-sizing: border-box;
-    /* Added a top margin to make the whole container look more like a phone screen */
-    margin-top: 50px;
+    margin: 0; /* Removed the top margin */
 }
 
 /* Header */
