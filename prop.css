@@ -34,6 +34,9 @@ body {
     margin-bottom: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    /* Apply the consistent background color here */
+    background-color: #388e3c; /* Darker green, same as MAP box */
+    color: white; /* Ensure text remains readable */
 }
 
 a {
@@ -42,18 +45,9 @@ a {
     display: block;
 }
 
-/* Individual section styles */
-#learning {
-    background-color: #8ac7d1; /* Light blue color */
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.map {
-    background-color: #388e3c; /* Darker green for map section */
-    color: white;
-}
+/* Individual section styles - only overrides for unique elements if needed */
+/* Removed specific background-colors from #learning, .map, .full, .quest
+   as they are now handled by .whole > div for consistency. */
 
 .al {
     font-size: 1.2em;
@@ -64,11 +58,6 @@ a {
     width: 50%;
     height: auto;
     margin-top: 10px;
-}
-
-.full {
-    background-color: #6ebf45; /* Lighter green for alerts */
-    color: white;
 }
 
 .alert {
@@ -89,11 +78,6 @@ a {
     width: 100%;
     height: auto;
     margin-top: 15px;
-}
-
-.quest {
-    background-color: #8ac7d1; /* Light blue */
-    color: white;
 }
 
 #mach {
