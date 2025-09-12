@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Zevizar</title>
-    <link rel="stylesheet" href="prop.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zevizar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for elements that need more specific styling */
+        .menu-icon {
+            font-size: 2em;
+            cursor: pointer;
+        }
+        .button-dark {
+            background-color: #378e47;
+        }
+        .button-light {
+            background-color: #6ebf45;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-white font-sans flex flex-col items-center min-h-screen">
+    <div class="whole w-full flex-grow flex flex-col">
+        <!-- Header -->
+        <header class="app-header flex justify-between items-center p-5 md:p-6 lg:p-8">
+            <img class="logo h-16 md:h-20 lg:h-24 w-auto" src="zevizar-logo.png" alt="Zevizar Logo">
+            <div class="menu-icon">&#9776;</div>
+        </header>
 
-<div class="whole">
-    <header class="app-header">
-        <img class="logo" src="zevizar-logo.png" alt="Zevizar Logo">
-        <div class="menu-icon">&#9776;</div>
-    </header>
+        <!-- Main Content -->
+        <main class="main-content flex flex-col gap-4 p-5 md:gap-5 md:p-6 lg:gap-6 lg:p-8 max-w-md mx-auto w-full">
+            <!-- Button Items -->
+            <a href="#" class="button-item button-dark rounded-xl text-center py-5 px-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="button-text text-white text-lg md:text-xl font-bold">Learning Management System</div>
+            </a>
+            <a href="#" class="button-item button-dark rounded-xl text-center py-5 px-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="button-text text-white text-lg md:text-xl font-bold">Disaster Preparedness Map</div>
+            </a>
+            <a href="#" class="button-item button-dark rounded-xl text-center py-5 px-6 shadow-md hover:shadow-lg transition-shadow">
+                <div class="button-text text-white text-lg md:text-xl font-bold">Emergency Alerts</div>
+            </a>
+            
+            <!-- Chatbot Button -->
+            <a href="#" class="button-item button-light rounded-xl text-center py-5 px-6 shadow-md hover:shadow-lg transition-shadow mt-4">
+                <div class="button-text text-white text-lg md:text-xl font-bold">Ask me about disasters?</div>
+            </a>
+        </main>
+    </div>
 
-    <main class="main-content">
-        <a href="#" class="button-item button-dark">
-            <div class="button-text">Learning Management System</div>
-        </a>
-        <a href="#" class="button-item button-dark">
-            <div class="button-text">Disaster Preparedness Map</div>
-        </a>
-        <a href="#" class="button-item button-dark">
-            <div class="button-text">Emergency Alerts</div>
-        </a>
-        
-        <a href="#" class="chatbot-button button-light">
-            <div class="button-text">Ask me about disasters?</div>
-        </a>
-    </main>
-</div>
-
+    <script>
+        // You can add any JavaScript functionality here if needed
+    </script>
 </body>
 </html>
